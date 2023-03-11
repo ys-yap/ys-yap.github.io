@@ -84,5 +84,5 @@ email: ''
 highlight_name: true
 ---
 
-Yong Sheng is an final year undergraduate at National Tsing Hua University. His research interests lie at the interface of particle physics, gravity and cosmology.
+Yong Sheng is a final year undergraduate at National Tsing Hua University. His research interests lie at the interface of particle physics, gravity and cosmology.
 {style="text-align: justify;"}
