@@ -52,7 +52,7 @@ social:
     icon_pack: fas
     link: '/#contact'
   - icon: facebook-f
-    icon_pack: fas
+    icon_pack: fab
     link: https://www.facebook.com/yap.y.yap.14/
   - icon: twitter
     icon_pack: fab
