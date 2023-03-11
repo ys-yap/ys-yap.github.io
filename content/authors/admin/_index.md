@@ -48,6 +48,9 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
+  - icon: cv
+    icon_pack: ai
+    link: uploads/CV.pdf    
   - icon: envelope
     icon_pack: fas
     link: mailto:yongsheng_yap@live.com 
@@ -57,9 +60,6 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/YongSheng_Yap 
-  - icon: cv
-    icon_pack: ai
-    link: uploads/CV.pdf    
 #    label: Follow me on Twitter
 #    display:
 #      header: true
