@@ -12,7 +12,6 @@ sections:
       username: admin
       # Override your bio text from `authors/admin/_index.md`?
       text:
-<!--   
   - block: features
     content:
       title: Skills
@@ -102,7 +101,7 @@ sections:
           title: 'Object-Oriented Programming in R'
           url: ''
     design:
-      columns: '2' -->
+      columns: '2'
   - block: collection
     id: posts
     content:
@@ -157,15 +156,15 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-<!--   - block: markdown
+  - block: markdown
     content:
       title: Gallery
       subtitle: ''
       text: |-
         {{< gallery album="demo" >}}
     design:
-      columns: '1' -->
-<!--   - block: collection
+      columns: '1'
+  - block: collection
     id: featured
     content:
       title: Featured Publications
@@ -204,19 +203,18 @@ sections:
     content:
       title: Popular Topics
     design:
-      columns: '2' -->
+      columns: '2'
   - block: contact
     id: contact
     content:
       title: Contact
       subtitle:
-      text: 
+      text: |-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: yongsheng_yap@live.com
-<!--       
+      email: test@example.org
       phone: 888 888 88 88
-      appointment_url: 'https://calendly.com' -->
-<!--       
+      appointment_url: 'https://calendly.com'
       address:
         street: 450 Serra Mall
         city: Stanford
@@ -224,11 +222,10 @@ sections:
         postcode: '94305'
         country: United States
         country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2 -->
+      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
-<!--         
       contact_links:
         - icon: twitter
           icon_pack: fab
@@ -241,10 +238,9 @@ sections:
         - icon: video
           icon_pack: fas
           name: Zoom Me
-          link: 'https://zoom.com' -->
+          link: 'https://zoom.com'
       # Automatically link email and phone or display as text?
       autolink: true
-<!--       
       # Email form provider
       form:
         provider: netlify
@@ -252,7 +248,7 @@ sections:
           id:
         netlify:
           # Enable CAPTCHA challenge to reduce spam?
-          captcha: false -->
+          captcha: false
     design:
       columns: '2'
 ---
