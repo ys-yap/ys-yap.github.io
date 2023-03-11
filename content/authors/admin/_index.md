@@ -50,7 +50,7 @@ education:
 social:
   - icon: cv
     icon_pack: ai
-    link: /uploads/CV.pdf    
+    link: authors/admin/CV.pdf 
   - icon: envelope
     icon_pack: fas
     link: mailto:yongsheng_yap@live.com 
