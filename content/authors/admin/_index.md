@@ -58,6 +58,7 @@ social:
     icon_pack: fab
     link: https://twitter.com/YongSheng_Yap
   - icon: moaa
+    icon_pack: fab
     link: https://moaa.starfinder.org.my/     
 #    label: Follow me on Twitter
 #    display:
