@@ -50,13 +50,15 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: mailto:yongsheng_yap@live.com 
   - icon: facebook-f
     icon_pack: fab
     link: https://www.facebook.com/yap.y.yap.14/
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/YongSheng_Yap
+  - icon: moaa
+    link: https://moaa.starfinder.org.my/     
 #    label: Follow me on Twitter
 #    display:
 #      header: true
