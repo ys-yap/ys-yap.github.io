@@ -84,5 +84,5 @@ email: ''
 highlight_name: true
 ---
 
-Yong Sheng is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Yong Sheng is an final year undergraduate at National Tsing Hua University. His research interests lie at the interface of particle physics, gravity and cosmology.
 {style="text-align: justify;"}
