@@ -57,6 +57,9 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/YongSheng_Yap 
+  - icon: cv
+    icon_pack: ai
+    link: uploads/CV.pdf    
 #    label: Follow me on Twitter
 #    display:
 #      header: true
@@ -72,9 +75,7 @@ social:
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/CV.pdf
+
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
