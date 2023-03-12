@@ -20,7 +20,7 @@ sections:
           # Apply image filters?
           filters:
             # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
-            brightness: 0.6
+            brightness: 0
           #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
           size: contain
           # Image focal point. Options include `left`, `center` (default), or `right`.
