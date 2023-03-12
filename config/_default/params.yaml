@@ -18,21 +18,22 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Physics student interested in particle interactions at cosmological scales. Malaysian Team Leader at International Olympiad on Astronomy and Astrophysics (IOAA).'
+    twitter: 'YongSheng_Yap'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
   verification:
     google: ''
     baidu: ''
+    bing: ''
 
 # Site header
 
 header:
   navbar:
     enable: true
-    align: l
+    align: r
     show_logo: true
     show_language: false
     show_day_night: true
@@ -43,7 +44,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} by Yong Sheng. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
