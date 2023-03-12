@@ -25,19 +25,15 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Board Member
+        - title: Event Officer
           company: Association of the Malaysian Alumni of the International Science Olympiads, AMISO
           company_url: ''
           company_logo: amiso
           location: 
           date_start: '2022-03-01'
           date_end: ''
-          description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
+          description: Coordinates AMISO events as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
+          
         - title: Academic Council & Team Leader
           company: Malaysia Olympiad on Astronomy and Astrophysics, MOAA
           company_url: ''
@@ -45,7 +41,7 @@ sections:
           location: 
           date_start: '2018-01-01'
           date_end: ''
-          description: Taught electronic engineering and researched semiconductor physics.
+          description: 
     design:
       columns: '2'
 #  - block: collection
