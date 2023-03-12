@@ -26,9 +26,10 @@ bio: Intrigued by the heavenly waltz of particles in our cosmos. My research loo
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Black Hole Superradiance
+  - Primordial Cosmology
+  - Astronomical Probes for BSM Physics
+  - Self-Gravitating Systems
 
 # Education to show in About widget
 education:
@@ -42,6 +43,9 @@ education:
     - course: BSc in Physics (Astronomy Track)
       institution: National Tsing Hua University
       year: 2023
+    - course: Secondary Education
+      institution: Kuen Cheng High School
+      year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
