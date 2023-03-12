@@ -28,7 +28,7 @@ sections:
           company: Association of the Malaysian Alumni of the International Science Olympiads, AMISO
           company_url: ''
           company_logo: AMISO
-          location: ''
+          location: Kuala Lumpur
           date_start: '2022-03-01'
           date_end: ''
           description: |2-
@@ -41,7 +41,7 @@ sections:
           company: Malaysia Olympiad on Astronomy and Astrophysics, MOAA
           company_url: ''
           company_logo: moaa_square
-          location: ''
+          location: Kuala Lumpur
           date_start: '2018-01-01'
           date_end: ''
           description: Taught electronic engineering and researched semiconductor physics.
@@ -101,7 +101,6 @@ sections:
 #      view: showcase
 #      # For Showcase view, flip alternate rows?
 #      flip_alt_rows: false
-
 #  - block: collection
 #    id: featured
 #    content:
@@ -146,6 +145,8 @@ sections:
     id: contact
     content:
       title: Contact
+      subtitle:
+      text: 
       # Contact (add or remove contact options as necessary)
       email: yongsheng_yap@live.com
 #      phone: 888 888 88 88
