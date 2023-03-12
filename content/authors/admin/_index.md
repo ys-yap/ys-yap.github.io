@@ -14,12 +14,12 @@ last_name: Yap
 superuser: true
 
 # Role/position/tagline
-role: Physics Undergraduate | Astronomy Educator 
+role: Physics Undergrad | Astronomy Educator 
 
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: National Tsing Hua University
-    url: https://phys.site.nthu.edu.tw/index.php?Lang=en
+#    url: https://phys.site.nthu.edu.tw/index.php?Lang=en
 
 # Short bio (displayed in user profile at end of posts)
 bio: Intrigued by the heavenly waltz of particles in our cosmos. My research looks into the interplay between particle physics, gravitation, and cosmology. 
