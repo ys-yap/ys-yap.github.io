@@ -14,7 +14,7 @@ last_name: Yap
 superuser: true
 
 # Role/position/tagline
-role: Physics Undergraduate | Astronomy Educator | Malaysian Team Leader IOAA 
+role: Physics Undergraduate | Astronomy Educator 
 
 # Organizations/Affiliations to show in About widget
 organizations:
