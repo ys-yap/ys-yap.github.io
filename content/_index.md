@@ -27,7 +27,7 @@ sections:
         - title: Board Member
           company: Association of the Malaysian Alumni of the International Science Olympiads, AMISO
           company_url: ''
-          company_logo: AMISO
+          company_logo: AMISO.png
           location: Kuala Lumpur
           date_start: '2022-03-01'
           date_end: ''
@@ -40,7 +40,7 @@ sections:
         - title: Academic Council & Team Leader
           company: Malaysia Olympiad on Astronomy and Astrophysics, MOAA
           company_url: ''
-          company_logo: moaa_square
+          company_logo: moaa_square.png
           location: Kuala Lumpur
           date_start: '2018-01-01'
           date_end: ''
