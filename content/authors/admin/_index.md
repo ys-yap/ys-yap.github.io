@@ -1,7 +1,6 @@
 ---
 # Display name
-title: Yap Yong Sheng 
-subtitle: 葉勇陞
+title: Yap Yong Sheng 葉勇陞
 
 # Full name (for SEO)
 first_name: Yong Sheng
