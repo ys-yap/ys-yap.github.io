@@ -22,7 +22,7 @@ organizations:
 #    url: https://phys.site.nthu.edu.tw/index.php?Lang=en
 
 # Short bio (displayed in user profile at end of posts)
-bio: Intrigued by the heavenly waltz of particles in our cosmos. My research looks into the interplay between particle physics, gravitation, and cosmology. 
+bio: Intrigued by the heavenly waltz of particles in our cosmos. My research looks into the intricate interplay between particle physics, gravitation, and cosmology. 
 
 # Interests to show in About widget
 interests:
@@ -88,5 +88,9 @@ email: ''
 highlight_name: true
 ---
 
-Yong Sheng is a final year undergraduate at National Tsing Hua University. His research interests lie at the interface of particle physics, gravity and cosmology.
+# Biography
+
+I'm a physics student whose interests lie at the interface of particle physics, gravity and cosmology. I enjoy doing astronomy education and outreach, and am the current team leader for the Malaysian team at the [International Olympiad on Astronomy and Astrophysics (IOAA)](https://www.ioaastrophysics.org/).
+
+Born and raised in the multicultural furnace of [Malaysia](https://en.wikipedia.org/wiki/Malaysia), and am finishing my undergraduate studies at National Tsing Hua University, located on the mesmerising island of [Taiwan](https://en.wikipedia.org/wiki/Taiwan) —— both of which I highly recommend you to visit!
 {style="text-align: justify;"}
