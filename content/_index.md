@@ -22,7 +22,7 @@ sections:
             # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
             brightness: 0
           #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
-          size: cover
+          size: actual
           # Image focal point. Options include `left`, `center` (default), or `right`.
           position: center
           # Use a fun parallax-like fixed background effect on desktop? true/false
