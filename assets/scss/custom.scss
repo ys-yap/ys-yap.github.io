@@ -1,7 +1,9 @@
-.about .background-img{
-  position: absolute;
-  bottom: 0px;
-  @media screen and (min-width: 768px) {
+#about {
+  .background-img{
+    position: absolute;
+    bottom: 0px;
+    @media screen and (min-width: 768px) {
     bottom: 70px;
+    }
   }
 }
