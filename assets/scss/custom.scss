@@ -1,4 +1,15 @@
 #about {
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: -70px;
+  }
+}
+
+
+#about {
   .background-img{
     position: absolute;
     bottom: 0px;
@@ -7,3 +18,4 @@
     }
   }
 }
+
