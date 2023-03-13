@@ -11,10 +11,13 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;/ul>
 &lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>arXiv 2023</title><link>https://ys-yap.github.io/arxiv/arxiv-2023/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://ys-yap.github.io/arxiv/arxiv-2023/</guid><description>&lt;h2 id="march-2023">March 2023&lt;/h2>
 &lt;ol>
-&lt;li>&lt;a href="https://arxiv.org/abs/2209.14313" target="_blank" rel="noopener">One $μ$ to rule them all: CMB spectral distortions can probe domain walls, cosmic strings and low scale phase transitions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://arxiv.org/abs/2209.14313" target="_blank" rel="noopener">One $\mu$ to rule them all: CMB spectral distortions can probe domain walls, cosmic strings and low scale phase transitions&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h6 id="tags-cmb-mu-distortion-topological-defect-fopt">tags: &amp;lsquo;cmb&amp;rsquo; &amp;lsquo;$\mu$-distortion&amp;rsquo; &amp;rsquo;topological-defect&amp;rsquo; &amp;lsquo;fopt&amp;rsquo;&lt;/h6>
+&lt;ol start="2">
 &lt;li>&lt;a href="https://arxiv.org/abs/2208.03458" target="_blank" rel="noopener">Constraints on primordial black holes with CMB spectral distortions&lt;/a>&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ol></description></item><item><title>An example preprint / working paper</title><link>https://ys-yap.github.io/publication/preprint/</link><pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate><guid>https://ys-yap.github.io/publication/preprint/</guid><description>&lt;div class="alert alert-note">
+&lt;/ol>
+&lt;h6 id="tags-cmb-y-distortion-pbh">tags: &amp;lsquo;CMB&amp;rsquo; &amp;lsquo;$\y$-distortion&amp;rsquo; &amp;lsquo;pbh&amp;rsquo;&lt;/h6></description></item><item><title>An example preprint / working paper</title><link>https://ys-yap.github.io/publication/preprint/</link><pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate><guid>https://ys-yap.github.io/publication/preprint/</guid><description>&lt;div class="alert alert-note">
 &lt;div>
 Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
 &lt;/div>
