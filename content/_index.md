@@ -17,7 +17,8 @@ sections:
   - block: markdown
     content:
       title: Education & Outreach
-      text: "International Olympiad on Astronomy and Astrophysics"
+      text: ## International Olympiad on Astronomy and Astrophysics
+    design:
       columns: '2'
 
 
