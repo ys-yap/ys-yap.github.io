@@ -8,13 +8,8 @@ main:
     url: '#about'
     weight: 10
   - name: arXiv
-    identifier: arXiv
     url: '/arXiv/'
     weight: 20
-  - name: arXiv-2023
-    parent: arXiv
-    url: arXiv/2023/
-    weight: 10  
   - name: Contact
     url: '#contact'
     weight: 30
