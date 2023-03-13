@@ -16,9 +16,9 @@ sections:
       
   - block: markdown
     content:
-      title: Education <\br> & Outreach
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
-    design:
+      title: Education & Outreach
+      text: |2-
+        ## International Olympiad on Astronomy and Astrophysics
       columns: '2'
 
 
