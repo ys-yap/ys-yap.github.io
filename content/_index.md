@@ -12,23 +12,6 @@ sections:
       username: admin
       # Override your bio text from `authors/admin/_index.md`?
       text:
-#    design:
-#      background:
-#        image:
-#          # Name of image in `assets/media/`.
-#          filename: footer.png
-#          # Apply image filters?
-#          filters:
-#            # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
-#            brightness: 0
-#          #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
-#          size: actual
-#          # Image focal point. Options include `left`, `center` (default), or `right`.
-#          position: center
-#          # Use a fun parallax-like fixed background effect on desktop? true/false
-#          parallax: false
-#          # Text color (true=light, false=dark, or remove for the dynamic theme color).
-#          text_color_light: true
   - block: experience
     id: commitments
     content:
@@ -59,6 +42,13 @@ sections:
           date_start: '2018-01-01'
           date_end: ''
           description: 
+    design:
+      columns: '2'
+      
+   - block: markdown
+    content:
+      title: Education \n & Outreach
+      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
     design:
       columns: '2'
 #  - block: collection
