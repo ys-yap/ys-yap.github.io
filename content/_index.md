@@ -16,7 +16,7 @@ sections:
       
   - block: markdown
     content:
-      title: Education \n & Outreach
+      title: Education <\br> & Outreach
       text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
     design:
       columns: '2'
