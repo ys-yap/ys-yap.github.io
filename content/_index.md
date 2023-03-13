@@ -18,8 +18,10 @@ sections:
     content:
       title: Education & Outreach
       text: |2-
+      
         International Olympiad on Astronomy and Astrophysics 
-        ====================================================
+        ----------------------------------------------------
+        
     design:
       columns: '2'
 
@@ -47,7 +49,7 @@ sections:
           description: Coordinates AMISO events as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
           
         - title: Academic Council & Team Leader
-          company: Malaysia Olympiad on Astronomy and Astrophysics, MOAA
+          company: [Malaysia Olympiad on Astronomy and Astrophysics, MOAA](https://moaa.starfinder.org.my/)
           company_url: ''
           company_logo: moaa
           location: 
