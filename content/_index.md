@@ -12,16 +12,15 @@ sections:
       username: admin
       # Override your bio text from `authors/admin/_index.md`?
       text:
-     
+
+      
   - block: markdown
     content:
-      title: Education \& Outreach
-      text: |2-
-      
-      ## International Olympiad on Astronomy and Astrophysics
-      
+      title: Education \n & Outreach
+      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
     design:
       columns: '2'
+
 
   - block: experience
     id: commitments
@@ -37,7 +36,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: Event Officer
-          company: [Association of the Malaysian Alumni of the International Science Olympiads, AMISO](https://amiso.my/)
+          company: Association of the Malaysian Alumni of the International Science Olympiads, AMISO
           company_url: ''
           company_logo: amiso
           location: 
@@ -46,7 +45,7 @@ sections:
           description: Coordinates AMISO events as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
           
         - title: Academic Council & Team Leader
-          company: [Malaysia Olympiad on Astronomy and Astrophysics, MOAA](https://moaa.starfinder.org.my/)
+          company: Malaysia Olympiad on Astronomy and Astrophysics, MOAA
           company_url: ''
           company_logo: moaa
           location: 
