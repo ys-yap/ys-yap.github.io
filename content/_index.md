@@ -12,6 +12,7 @@ sections:
       username: admin
       # Override your bio text from `authors/admin/_index.md`?
       text:
+
   - block: experience
     id: commitments
     content:
@@ -42,13 +43,6 @@ sections:
           date_start: '2018-01-01'
           date_end: ''
           description: 
-    design:
-      columns: '2'
-      
-   - block: markdown
-    content:
-      title: Education \n & Outreach
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
     design:
       columns: '2'
 #  - block: collection
