@@ -7,8 +7,8 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Commitments
-    url: '#commitments'
+  - name: arXiv
+    url: '/arXiv/'
     weight: 20
   - name: Contact
     url: '#contact'
