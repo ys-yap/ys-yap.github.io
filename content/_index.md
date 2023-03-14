@@ -18,9 +18,13 @@ sections:
     content:
       title: Education & Outreach
       text: |2-
-      
+        
+        Quality education is scarce. To be provided with the opportunities I have had, learning from the most passionate of people, has been a massive privilege. For that, I am forever indebted. In turn, I have embarked on this endeavour to reciprocate the goodwill of many before me and reach out to younger generations, and it has been a journey I truly cherish.
+        
         International Olympiad on Astronomy and Astrophysics 
         ----------------------------------------------------
+        
+        I have served on the Academic Council for the Malaysia Olympiad on Astronomy and Astrophysics (MOAA) since 2018. Specifically, I coordinate the academic tasks involved in the national selection, which includes problem-setting, lecturing and training in problem-solving and practical observations.  
         
     design:
       columns: '2'
@@ -40,22 +44,22 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: Event Officer
-          company: Association of the Malaysian Alumni of the International Science Olympiads, AMISO
+          company: "[Association of the Malaysian Alumni of the International Science Olympiads, AMISO](https://amiso.my/)"
           company_url: ''
           company_logo: amiso
           location: 
           date_start: '2022-03-01'
           date_end: ''
-          description: Coordinates AMISO events as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
+          description: Coordinating AMISO events, as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
           
-        - title: Academic Council & Team Leader
+        - title: Academic Counciller
           company: "[Malaysia Olympiad on Astronomy and Astrophysics, MOAA](https://moaa.starfinder.org.my/)"
           company_url: ''
           company_logo: moaa
           location: 
           date_start: '2018-01-01'
           date_end: ''
-          description: 
+          description: Lecturing, setting test questions and selecting a Malaysian team for the International Olympiad.
     design:
       columns: '2'
       
