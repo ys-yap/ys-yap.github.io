@@ -21,10 +21,10 @@ sections:
         
         Quality education is scarce. To be provided with the opportunities I have had, learning from the most passionate of people, has been a massive privilege. For that, I am forever indebted. In turn, I have embarked on this endeavour to reciprocate the goodwill of many before me and reach out to younger generations, and it has been a journey I truly cherish.
         
-        International Olympiad on Astronomy and Astrophysics 
+        [International Olympiad on Astronomy and Astrophysics](https://www.ioaastrophysics.org/)
         ----------------------------------------------------
         
-        I have served on the Academic Council for the Malaysia Olympiad on Astronomy and Astrophysics (MOAA) since 2018. Specifically, I coordinate the academic tasks involved in the national selection, which includes problem-setting, lecturing and training in problem-solving and practical observations.  
+        I have served on the Academic Council for the Malaysia Olympiad on Astronomy and Astrophysics (MOAA) since 2018. Specifically, I coordinate the academic tasks involved in the national selection, which includes problem-setting, lecturing and training in problem-solving and practical observations. 
         
     design:
       columns: '2'
