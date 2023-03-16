@@ -24,7 +24,7 @@ sections:
         [International Olympiad on Astronomy and Astrophysics](https://www.ioaastrophysics.org/)
         ----------------------------------------------------
         
-        ![Malaysia at IOAA 2019](/img/ioaa.jpeg)
+        ![Malaysia at IOAA 2019](ioaa.jpeg)
         
         I have served on the Academic Council for the Malaysia Olympiad on Astronomy and Astrophysics (MOAA) since 2018. Specifically, I coordinate academic tasks involved in the national selection, which includes problem-setting, lecturing and training in problem-solving and practical observations.
         
