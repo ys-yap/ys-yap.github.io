@@ -15,6 +15,7 @@ sections:
 
       
   - block: markdown
+    id: outreach
     content:
       title: Education & Outreach
       text: |2-
@@ -28,7 +29,7 @@ sections:
         
         I have served on the Academic Council for the Malaysia Olympiad on Astronomy and Astrophysics (MOAA) since 2018. Specifically, I coordinate academic tasks involved in the national selection, which includes problem-setting, lecturing and training in problem-solving and practical observations. We share the objective in providing aspiring students a pedagogical walkthrough into the field of astronomy.  
         
-        From 2019 to 2022, I have been the coach and team leader for the Malaysia team at the IOAA in Hungary, virtual GeCAA
+        From 2019 to 2022, I have been the coach and team leader for the Malaysia team at the IOAA in Hungary, Colombia (virtual), and Georgia. 
         
     design:
       columns: '2'
