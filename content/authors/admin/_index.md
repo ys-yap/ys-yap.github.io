@@ -14,7 +14,7 @@ last_name: Yap
 superuser: true
 
 # Role/position/tagline
-role: Physics Masters Student | Astronomy Educator 
+role: Physics Postgrad | Astronomy Educator 
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -92,5 +92,5 @@ highlight_name: true
 
 I'm a physics student whose interests lie at the interface of field theories, gravity and cosmology. I enjoy doing astronomy education and outreach, and am the current team leader for the Malaysian team at the [International Olympiad on Astronomy and Astrophysics (IOAA)](https://www.ioaastrophysics.org/).
 
-Born and raised in the multicultural furnace of [Malaysia](https://en.wikipedia.org/wiki/Malaysia), I finished my undergraduate studies at National Tsing Hua University, located on the mesmerising island of [Taiwan](https://en.wikipedia.org/wiki/Taiwan) —— both of which I highly recommend you to visit! 
+Born and raised in the multicultural furnace of [Malaysia](https://en.wikipedia.org/wiki/Malaysia), I went on to finish my undergraduate studies at National Tsing Hua University, located on the mesmerising island of [Taiwan](https://en.wikipedia.org/wiki/Taiwan) —— both of which I highly recommend you to visit! 
 {style="text-align: justify;"}
