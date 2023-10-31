@@ -21,7 +21,14 @@ sections:
       text: |2-
         
         Quality education is scarce. To be provided with the opportunities I have had, learning from the most passionate of people, has been a massive privilege. For that, I am forever indebted. In turn, I have embarked on this endeavour to reciprocate the goodwill of many before me and reach out to younger generations, and it has been a journey I truly cherish.
-        
+
+        [FrogAsia SPACE Series](https://www.frogasia.com/launchpad-space-series)
+        ----------------------------------------------------
+    
+        ![FrogAsia SPACE Series](frog.png)
+    
+        In efforts to provide a local, Malaysian narrative on astronomy, several astrophysicists and I partnered with [Frogasia](https://www.frogasia.com/) to curate an open-access learning module as a first-exposure course to astronomy for kids between ages 10 to 15. The course focuses on demonstrating connections between the cosmos and human life across the past, present and future. We aim to bring vibrance to astronomy education, and hope to inspire curious minds with the highlights of talented Malaysian astronomers.
+    
         [International Olympiad on Astronomy and Astrophysics](https://www.ioaastrophysics.org/)
         ----------------------------------------------------
         
@@ -29,7 +36,9 @@ sections:
         
         I have served on the Academic Council for the Malaysia Olympiad on Astronomy and Astrophysics (MOAA) since 2018. Specifically, I coordinate academic tasks involved in the national selection, which includes problem-setting, lecturing and training in problem-solving and practical observations. We share the objective in providing aspiring students a pedagogical walkthrough into the field of astronomy.
         
-        From 2019 to 2022, I have been the coach and team leader for the Malaysia team at the IOAA in [Hungary](https://www.sinchew.com.my/?p=2876622), [Colombia (virtual)](https://www.sinchew.com.my/20211122/%e5%9b%bd%e9%99%85%e5%a4%a9%e6%96%87%e4%b8%8e%e5%a4%a9%e4%bd%93%e7%89%a9%e7%90%86%e5%a5%a5%e6%9e%97%e5%8c%b9%e5%85%8b%e7%ab%9e%e8%b5%9b/), and [Georgia](https://www.sinchew.com.my/?p=4039928). Through collaboration with the [National Planetarium](https://www.planetariumnegara.gov.my/#/landing), [Langkawi National Observatory](http://observatory.mysa.gov.my/), and the Malaysian astronomy community, we have been able to provide high-calibre training in theoretical and practical aspects of astronomy. We aim to promote the learning of astronomy among students, and to expose them to the frontiers of astronomical research. For more information, check out the [MOAA website](https://moaa.starfinder.org.my/) or email us at [moaa@starfinder.org.my](mailto:moaa@starfinder.org.my)
+        From 2019 to 2023, I have been the coach and team leader for the Malaysia team at the IOAA in [Hungary](https://www.sinchew.com.my/?p=2876622), [Colombia (virtual)](https://www.sinchew.com.my/20211122/%e5%9b%bd%e9%99%85%e5%a4%a9%e6%96%87%e4%b8%8e%e5%a4%a9%e4%bd%93%e7%89%a9%e7%90%86%e5%a5%a5%e6%9e%97%e5%8c%b9%e5%85%8b%e7%ab%9e%e8%b5%9b/), [Georgia](https://www.sinchew.com.my/?p=4039928), and [Poland](https://www.chinapress.com.my/?p=3568959). Through collaboration with the [National Planetarium](https://www.planetariumnegara.gov.my/#/landing), [Langkawi National Observatory](http://observatory.mysa.gov.my/), and the Malaysian astronomy community, we have been able to provide high-calibre training in theoretical and practical aspects of astronomy. We aim to promote the learning of astronomy among students, and to expose them to the frontiers of astronomical research. For more information, check out the [MOAA website](https://moaa.starfinder.org.my/) or email us at [moaa@starfinder.org.my](mailto:moaa@starfinder.org.my)
+
+
         
     design:
       columns: '2'
@@ -48,14 +57,14 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Event Officer
+        - title: Board Member
           company: "[Association of the Malaysian Alumni of the International Science Olympiads, AMISO](https://amiso.my/)"
           company_url: ''
           company_logo: amiso
           location: 
           date_start: '2022-03-01'
           date_end: ''
-          description: Coordinating AMISO events, as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
+          description: Coordinating STEM outreach initiatives, as well as administrative and academic initiatives between AMISO and local Olympiad selection committees.
           
         - title: Academic Counciller
           company: "[Malaysia Olympiad on Astronomy and Astrophysics, MOAA](https://moaa.starfinder.org.my/)"
