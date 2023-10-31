@@ -14,21 +14,21 @@ last_name: Yap
 superuser: true
 
 # Role/position/tagline
-role: Physics Undergrad | Astronomy Educator 
+role: Physics Masters Student | Astronomy Educator 
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: National Tsing Hua University
+  - name: University of Cambridge
 #    url: https://phys.site.nthu.edu.tw/index.php?Lang=en
 
 # Short bio (displayed in user profile at end of posts)
-bio: Intrigued by the heavenly waltz of particles in our cosmos. My research looks into the intricate interplay between particle physics, gravitation, and cosmology. 
+bio: Intrigued by the heavenly waltz of particles in our cosmos. My research looks into the intricate interplay between field theories, gravitation, and cosmology. 
 
 # Interests to show in About widget
 interests:
+  - Cosmological Correlators
+  - 21 cm & Lya Cosmology
   - Black Hole Superradiance
-  - Primordial Cosmology
-  - Astronomical Probes for BSM Physics
   - Self-Gravitating Systems
 
 # Education to show in About widget
@@ -37,9 +37,9 @@ education:
 #    - course: PhD in Artificial Intelligence
 #      institution: Stanford University
 #      year: 2012
-#    - course: MEng in Artificial Intelligence
-#      institution: Massachusetts Institute of Technology
-#      year: 2009
+    - course: MASt in Mathematics
+      institution: University of Cambridge
+      year: 2024
     - course: BSc in Physics (Astronomy Track)
       institution: National Tsing Hua University
       year: 2023
@@ -90,7 +90,7 @@ highlight_name: true
 
 # Biography
 
-I'm a physics student whose interests lie at the interface of particle physics, gravity and cosmology. I enjoy doing astronomy education and outreach, and am the current team leader for the Malaysian team at the [International Olympiad on Astronomy and Astrophysics (IOAA)](https://www.ioaastrophysics.org/).
+I'm a physics student whose interests lie at the interface of field theories, gravity and cosmology. I enjoy doing astronomy education and outreach, and am the current team leader for the Malaysian team at the [International Olympiad on Astronomy and Astrophysics (IOAA)](https://www.ioaastrophysics.org/).
 
-Born and raised in the multicultural furnace of [Malaysia](https://en.wikipedia.org/wiki/Malaysia), and am finishing my undergraduate studies at National Tsing Hua University, located on the mesmerising island of [Taiwan](https://en.wikipedia.org/wiki/Taiwan) —— both of which I highly recommend you to visit!
+Born and raised in the multicultural furnace of [Malaysia](https://en.wikipedia.org/wiki/Malaysia), I finished my undergraduate studies at National Tsing Hua University, located on the mesmerising island of [Taiwan](https://en.wikipedia.org/wiki/Taiwan) —— both of which I highly recommend you to visit! 
 {style="text-align: justify;"}
