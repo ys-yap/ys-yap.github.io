@@ -90,7 +90,7 @@ highlight_name: true
 
 # Biography
 
-I'm a physics student whose interests lie at the interface of field theories, gravity and cosmology. I enjoy doing astronomy education and outreach, and am the current team leader for the Malaysian team at the [International Olympiad on Astronomy and Astrophysics (IOAA)](https://www.ioaastrophysics.org/).
+I'm a physics student whose interests lie at the interface of field theories, cosmology and gravity. I enjoy doing astronomy education and outreach, and am the current team leader for the Malaysian team at the [International Olympiad on Astronomy and Astrophysics (IOAA)](https://www.ioaastrophysics.org/).
 
 Born and raised in the multicultural furnace of [Malaysia](https://en.wikipedia.org/wiki/Malaysia), I went on to finish my undergraduate studies at National Tsing Hua University, located on the mesmerising island of [Taiwan](https://en.wikipedia.org/wiki/Taiwan) —— both of which I highly recommend you to visit! 
 {style="text-align: justify;"}
