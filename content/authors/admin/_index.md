@@ -27,7 +27,6 @@ bio: Intrigued by the heavenly waltz of particles in our cosmos. My research loo
 # Interests to show in About widget
 interests:
   - Cosmological Correlators
-  - 21 cm & Lya Cosmology
   - Black Hole Superradiance
   - Self-Gravitating Systems
 
