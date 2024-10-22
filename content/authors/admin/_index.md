@@ -33,7 +33,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Applied Maths and Theoretical Physics
+    - course: PhD in Theoretical Physics
       institution: University of Cambridge
       year: current
     - course: MASt in Mathematics
