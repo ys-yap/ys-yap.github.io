@@ -34,18 +34,15 @@ interests:
 # Education to show in About widget
 education:
   courses:
-#    - course: PhD in Artificial Intelligence
-#      institution: Stanford University
-#      year: 2012
+    - course: PhD in Applied Maths and Theoretical Physics
+      institution: University of Cambridge
+      year: current
     - course: MASt in Mathematics
       institution: University of Cambridge
       year: 2024
     - course: BSc in Physics (Astronomy Track)
       institution: National Tsing Hua University
       year: 2023
-    - course: Secondary Education
-      institution: Kuen Cheng High School
-      year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
