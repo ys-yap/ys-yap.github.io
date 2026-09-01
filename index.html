@@ -88,8 +88,17 @@
 
   /* ---------- Top nav ---------- */
   header.site-nav {
-    background-color: var(--dark-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
     padding: 13px 48px;
+    transition: background-color 0.3s ease;
+  }
+    header.site-nav.scrolled {
+    background-color: var(--dark-bg);
   }
 
   header.site-nav .site-title {
@@ -115,6 +124,7 @@
     background-image: url('assets/banner.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
   }
 
   .hero::before {
@@ -270,7 +280,7 @@
   <section class="bio-section">
     <img class="bio-photo" src="assets/avatar.jpeg" alt="A photo of Me!">
     <div class="bio-text">
-      <p>I am Yong Sheng Yap (<span style="font-family:'Iansui', 'Playfair Display', serif;">（葉勇陞）</span>), PhD student at the University of Cambridge.</p>
+      <p>I am Yong Sheng Yap (<span style="font-family:'Iansui', 'Playfair Display', serif;">葉勇陞</span>), PhD student at the University of Cambridge.</p>
       <p>My research explores the nexus between <span class="accent">cosmology</span> and <span class="accent">fundamental physics</span>. The universe is a treasure trove for probing both the weakest and most energetic of interactions, yet those signals are buried beneath piles of intergalactic dust and the glow of foreground galaxies. Using techniques from effective field theories, I develop methods to model the distribution of galaxies and radiation to better extract information about fundamental physics. I am also particularly keen on applying these tools to better understand inflation and its observational signatures.</p>
     </div>
   </section>
@@ -284,5 +294,16 @@
     <p>© Yong Sheng Yap. All rights reserved.</p>
   </footer>
 
+<script>
+  const nav = document.querySelector('header.site-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+  
 </body>
 </html>
