@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yong Sheng Yap | 葉勇陞</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Roboto:wght@300;400;500;700;900&family=Roboto+Condensed:wght@400;700&family=Iansui&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --dark-bg: #1b1b1b;
+    --footer-bg: #303033;
+    --accent: #b45f06;
+    --text-color: #202124;
+    --light-grey: #e1dfdb;
+    --muted-grey: #bdbdbd;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--text-color);
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- Top nav ---------- */
+  header.site-nav {
+    background-color: var(--dark-bg);
+    padding: 13px 48px;
+  }
+
+  header.site-nav .site-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    header.site-nav { padding: 13px 20px; }
+    header.site-nav .site-title { font-size: 14pt; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px;
+    background-image: url('https://lh3.googleusercontent.com/sitesv/AG8ngQUwplhLlCJ54JpXk420rVZm73phjIH6fOmQtNFDINucRQek167SqmBLFakWGFEedNyPmpPpbl6Gz1-pRO5I9c4ddPABJikCVkscVmUVFZi0rZv3O9HmIFIzakv9zRRNoZITtpzT5EWsXYV8EkpTylQrnzeLeTpLOrrzOucLok_7JRmMbjE-udDUH8iFMgo=w1920');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(33, 33, 33, 0.5);
+  }
+
+  .hero-box {
+    position: relative;
+    border: 6px solid #ffffff;
+    padding: 44px 56px;
+    text-align: center;
+    max-width: 720px;
+  }
+
+  .hero-box h1 {
+    margin: 0 0 12px 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 50pt;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+    color: #ffffff;
+  }
+
+  .hero-box p {
+    margin: 0;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22pt;
+    color: #ffffff;
+  }
+
+  .scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 767px) {
+    .hero-box { padding: 20px; border-width: 4px; }
+    .hero-box h1 { font-size: 30pt; }
+    .hero-box p { font-size: 15pt; }
+  }
+
+  /* ---------- Bio section ---------- */
+  .bio-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 56px;
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+  }
+
+  .bio-photo {
+    flex: 0 0 auto;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bio-text {
+    flex: 1 1 auto;
+    font-size: 13.5pt;
+    line-height: 1.75;
+    color: #000000;
+  }
+
+  .bio-text p { margin: 0 0 15px 0; }
+
+  .bio-text .accent {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .bio-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 56px 24px;
+      gap: 32px;
+    }
+    .bio-photo { width: 200px; height: 200px; }
+  }
+
+  /* ---------- Contact section ---------- */
+  .contact-section {
+    text-align: center;
+    padding: 0 24px 80px 24px;
+  }
+
+  .contact-section h2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 26pt;
+    margin: 0 0 16px 0;
+  }
+
+  .contact-section p {
+    font-size: 13.5pt;
+    margin: 0;
+    color: #202124;
+  }
+
+  .reverse-email {
+    display: inline-block;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+  /* ---------- Footer ---------- */
+  footer.site-footer {
+    background-color: var(--footer-bg);
+    padding: 24px;
+    text-align: center;
+  }
+
+  footer.site-footer p {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    letter-spacing: 0.5px;
+    color: var(--light-grey);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <header class="site-nav">
+    <span class="site-title">Yong Sheng Yap | <span style="font-family:'Iansui', 'Playfair Display', serif;">葉勇陞</span></span>
+  </header>
+
+  <section class="hero">
+    <div class="hero-box">
+      <h1>Yong Sheng Yap</h1>
+      <p>Cosmologist | PhD Student @ Cambridge</p>
+    </div>
+    <div class="scroll-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>
+    </div>
+  </section>
+
+  <section class="bio-section">
+    <img class="bio-photo" src="https://lh3.googleusercontent.com/sitesv/AG8ngQUzgnjuAy5bi9sZPxNJkSSfQ6oWfCwjRoWTSfTY8QfgfuhyM7pMt6KwQRzR2hQ1EDgNQnI8_c-XMDhLRA-I2F_r8MsO-UjYqzm9j4-1gbjBEeVg4FKeCWNKdOj9IP7pApTvCJAx8v4BSHSOR_sxG5lx3PzQ8V99KnNe23sl6axwDHmAVV3JvTosC5IvL5g=w1280" alt="A photo of Me!">
+    <div class="bio-text">
+      <p>I am Yong Sheng Yap (葉勇陞), PhD student at the University of Cambridge.</p>
+      <p>My research explores the nexus between <span class="accent">cosmology</span> and <span class="accent">fundamental physics</span>. The universe is a treasure trove for probing both the weakest and most energetic of interactions, yet those signals are buried beneath piles of intergalactic dust and the glow of foreground galaxies. Using techniques from effective field theories, I develop methods to model the distribution of galaxies and radiation to better extract information about fundamental physics. I am also particularly keen on applying these tools to better understand inflation and its observational signatures.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p><span class="reverse-email">ku.ca.mac@32ysy</span></p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© Yong Sheng Yap. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
