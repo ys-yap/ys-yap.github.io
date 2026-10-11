@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Research | Yong Sheng Yap</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+
+<style>
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto/static/Roboto-Black.ttf') format('truetype');
+    font-weight: 900; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url('assets/fonts/Roboto_Condensed/static/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Iansui';
+    src: url('assets/fonts/Iansui/Iansui-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+
+  :root {
+    --dark-bg: #1b1b1b;
+    --footer-bg: #303033;
+    --accent: #b45f06;
+    --text-color: #202124;
+    --light-grey: #e1dfdb;
+    --section-border: #e8e4df;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--text-color);
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+  html { scroll-behavior: smooth; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Nav ── */
+  header.site-nav {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+    background-color: var(--dark-bg);
+    padding: 13px 48px;
+    display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+  }
+  header.site-nav .site-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; font-size: 18pt; color: #ffffff; white-space: nowrap;
+  }
+  nav.main-nav { display: flex; gap: 28px; }
+  nav.main-nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10.5pt; letter-spacing: 0.6px; color: #cccccc;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  nav.main-nav a:hover, nav.main-nav a.active { color: #ffffff; }
+  nav.main-nav a.active { border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  @media (max-width: 767px) {
+    header.site-nav { padding: 13px 20px; flex-wrap: wrap; gap: 12px; }
+    header.site-nav .site-title { font-size: 14pt; }
+    nav.main-nav { gap: 18px; }
+    nav.main-nav a { font-size: 9pt; }
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    height: 28vh; min-height: 180px; max-height: 260px;
+    display: flex; align-items: center; justify-content: center;
+    background-image: url('assets/banner.png');
+    background-size: cover; background-position: center;
+    background-attachment: fixed; margin-top: 54px;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background-color: rgba(33,33,33,0.5);
+  }
+  .hero h1 {
+    position: relative;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900; font-size: 50pt;
+    letter-spacing: -0.8px; color: #ffffff; margin: 0;
+  }
+  @media (max-width: 767px) {
+    .hero { height: auto; padding: 48px 24px; }
+    .hero h1 { font-size: 34pt; }
+  }
+
+  /* ── Jump links ── */
+  .jump-nav {
+    border-bottom: 1px solid var(--section-border);
+    padding: 0 56px; display: flex;
+  }
+  .jump-nav a {
+    display: inline-block; padding: 18px 28px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10.5pt; color: #888;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s; white-space: nowrap;
+  }
+  .jump-nav a.lnk-parity:hover  { color: #2e6fa8; border-bottom-color: #2e6fa8; }
+  .jump-nav a.lnk-png:hover     { color: #1e7a48; border-bottom-color: #1e7a48; }
+  .jump-nav a.lnk-eft:hover     { color: #6b3d7a; border-bottom-color: #6b3d7a; }
+  @media (max-width: 767px) {
+    .jump-nav { padding: 0 8px; overflow-x: auto; }
+    .jump-nav a { padding: 14px 16px 11px; font-size: 9.5pt; }
+  }
+
+  /* ── Per-section colour theming ── */
+  /*
+     In use:
+       .sec-parity   — slate blue
+       .sec-png      — forest green
+       .sec-eft      — deep plum
+
+     Available for new sections:
+       .sec-general  — burnt orange (site accent)
+       .sec-rose     — dusty burgundy
+       .sec-gold     — warm ochre
+       .sec-teal     — dark teal
+       .sec-sand     — neutral taupe
+  */
+  .sec-parity  { --sec: #2e6fa8; --sec-stakes-bg: rgba(46,111,168,0.07);  --sec-stakes-text: #0d2a40; }
+  .sec-png     { --sec: #1e7a48; --sec-stakes-bg: rgba(30,122,72,0.07);   --sec-stakes-text: #0b2e1c; }
+  .sec-eft     { --sec: #6b3d7a; --sec-stakes-bg: rgba(107,61,122,0.07);  --sec-stakes-text: #2a1030; }
+  .sec-general { --sec: #b45f06; --sec-stakes-bg: rgba(180,95,6,0.07);    --sec-stakes-text: #4a2800; }
+  .sec-rose    { --sec: #924a4a; --sec-stakes-bg: rgba(146,74,74,0.07);   --sec-stakes-text: #3a1515; }
+  .sec-gold    { --sec: #8a7020; --sec-stakes-bg: rgba(138,112,32,0.07);  --sec-stakes-text: #352a00; }
+  .sec-teal    { --sec: #1e6e72; --sec-stakes-bg: rgba(30,110,114,0.07);  --sec-stakes-text: #0a2a2c; }
+  .sec-sand    { --sec: #7a6a55; --sec-stakes-bg: rgba(122,106,85,0.07);  --sec-stakes-text: #2e2418; }
+
+  /* ── Content wrapper ── */
+  .research-wrapper { max-width: 780px; margin: 0 auto; padding: 0 48px 100px; }
+  @media (max-width: 767px) { .research-wrapper { padding: 0 24px 72px; } }
+
+  /* ── Opening paragraph ── */
+  .research-intro {
+    padding: 56px 0 0; margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13.5pt; line-height: 1.85; color: #2c2c2c; max-width: 68ch;
+  }
+  .new-to-this {
+    display: block; padding: 28px 0 0; margin: 0;
+    font-family: 'Open Sans', sans-serif; font-size: 11pt; color: #888;
+  }
+
+  /* ── Research sections ── */
+  .research-section {
+    padding: 80px 0 64px;
+    border-bottom: 1px solid var(--section-border);
+    scroll-margin-top: 60px;
+  }
+  .research-section:last-of-type { border-bottom: none; }
+  .research-section::before {
+    content: ""; display: block;
+    width: 36px; height: 2px;
+    background: var(--sec); margin-bottom: 20px;
+  }
+
+  /* ── Headings ── */
+  .research-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; font-size: 24pt; line-height: 1.2;
+    margin: 0 0 24px; color: var(--sec);
+  }
+
+  /* ── Lead ── */
+  .research-section .lead {
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-size: 13.5pt; line-height: 1.75;
+    color: #404040; margin: 0 0 28px;
+  }
+
+  /* ── Body ── */
+  .research-section p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13.5pt; line-height: 1.85; color: #2c2c2c;
+    margin: 0 0 20px; max-width: 68ch;
+  }
+  .research-section p:last-of-type { margin-bottom: 0; }
+  .research-section .accent-word { color: var(--sec); font-weight: 700; }
+
+  /* ── Stakes callout ── */
+  .stakes {
+    background: var(--sec-stakes-bg);
+    border-left: 2px solid var(--sec);
+    padding: 16px 20px; margin: 28px 0 0; max-width: 68ch;
+  }
+  .stakes p {
+    margin: 0 !important; font-size: 12pt !important;
+    line-height: 1.75 !important;
+    color: var(--sec-stakes-text) !important; font-style: italic;
+  }
+
+  /* ── Paper link ── */
+  .paper-link {
+    display: inline-flex; align-items: center; gap: 7px;
+    margin-top: 24px; font-family: 'Open Sans', sans-serif; font-size: 10pt;
+    color: var(--sec);
+    border-bottom: 1px solid color-mix(in srgb, var(--sec) 35%, transparent);
+    padding-bottom: 2px; transition: border-color 0.2s;
+  }
+  .paper-link:hover { border-bottom-color: var(--sec); }
+  .paper-link::before { content: "→"; }
+
+  /* ── Optional image layout ── */
+  /*
+    Wrap any paragraph + image in:
+      <div class="with-figure">
+        <div class="figure-text"><p>…</p></div>
+        <figure class="section-figure">
+          <img src="assets/img.jpg" alt="…">
+          <figcaption>Optional caption.</figcaption>
+        </figure>
+      </div>
+  */
+  .with-figure { display: flex; align-items: flex-start; gap: 36px; margin-bottom: 20px; }
+  .with-figure .figure-text { flex: 1 1 auto; min-width: 0; }
+  .with-figure .figure-text p { margin-bottom: 0; }
+  .section-figure { flex: 0 0 220px; margin: 4px 0 0; }
+  .section-figure img { width: 100%; display: block; border: 1px solid var(--section-border); }
+  .section-figure figcaption {
+    font-size: 9pt; line-height: 1.5; color: #999; margin-top: 7px; font-style: italic;
+  }
+  @media (max-width: 820px) {
+    .with-figure { flex-direction: column; gap: 18px; }
+    .section-figure { flex: none; width: 100%; max-width: 400px; }
+  }
+
+  /* ── Back to top ── */
+  .back-top-wrap { text-align: center; padding: 48px 0 72px; }
+  .back-top {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9.5pt; letter-spacing: 1.5px; text-transform: uppercase;
+    color: #999; border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .back-top:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ── Footer ── */
+  footer.site-footer { background-color: var(--footer-bg); padding: 24px; text-align: center; }
+  footer.site-footer p {
+    margin: 0; font-family: 'Open Sans', sans-serif;
+    font-size: 13pt; letter-spacing: 0.5px;
+    color: var(--light-grey); text-transform: uppercase;
+  }
+</style>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-title">
+      Yong Sheng Yap | <span style="font-family:'Iansui','Playfair Display',serif;">葉勇陞</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publication.html" class="active">Publications</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Research</h1>
+  </section>
+
+  <nav class="jump-nav" aria-label="Jump to research topic">
+    <a href="#parity" class="lnk-parity">Parity violation</a>
+    <a href="#png"    class="lnk-png">Primordial non-Gaussianity</a>
+    <!-- <a href="#eft"    class="lnk-eft">EFT foundations</a> -->
+  </nav>
+
+  <div class="research-wrapper">
+
+    <span class="new-to-this">
+      <!-- New to this? Start with <a href="big-picture.html" style="color:var(--accent); border-bottom:1px solid rgba(180,95,6,0.35);">The Big Picture</a> — no equations required. -->
+      Under construction...
+    </span>
+
+    <p class="research-intro">
+      For the past few decades, cosmological observations have painted a remarkably simple picture of our universe, one that rests on five pillars: 
+      <span class="accent-word">General Relativity</span>, the <span class="accent-word">Standard Model</span> of particle physics, 
+      <span class="accent-word">Inflation</span>, <span class="accent-word">Dark Matter</span>, and <span class="accent-word">Dark Energy</span>. 
+      Simple as it may seem, the latter three remain largely mysterious, and the former two show minor but nagging holes in need of patching. 
+      However, as we march into the era of precision cosmology, swamped by data of unprecedented volume and fidelity, 
+      there is a genuine chance that some of these mysteries can be unveiled, and <i>many more</i> questions unearthed in their place.
+    </p>
+    <p class="research-intro" style="padding-top: 20px;">
+      Precision data, however, demands precision techniques, and we must find ways to orient ourselves before we lose our bearings and drown in it. 
+      This is where <span class="accent-word">effective field theory</span> earns its keep. 
+      It provides guardrails that encapsulate the relevant features of fundamental physics under controlled assumptions, 
+      and with that, it lets us pin down the unique signatures that new physics would leave in the cosmos and perform a targeted surgery to locate them 
+      with designed statistics in hand. 
+      Using EFT as both a theoretical lens and a computational engine, I work to understand the phenomenology of the universe 
+      from its earliest seconds to its latest epochs and probe fundamental physics from statistics of the large-scale structure and the cosmic microwave background.
+      Over the past few years, this has drawn me into questions about the symmetries and statistics 
+      of the primordial universe, and into the theoretical foundations that underpin our ability to answer them at all.
+    </p>
+
+    <!-- Parity violation -->
+    <section class="research-section sec-parity" id="parity">
+      <h2>Parity Violation</h2>
+      <p class="lead">
+        Parity is <i>not</i> a symmetry of our universe today, why would it be back then?
+      </p>
+      <p>
+        Under construction...
+        <!-- Parity, the discrete symmetry mapping every spatial point to its mirror image, 
+        is violated by the weak force but has long been assumed to hold in gravity and cosmology. 
+        A growing body of theoretical work suggests this need not be the case: certain models of inflation and
+        parity-violating gravitational interactions predict a subtle but nonzero handedness in the primordial perturbations,
+        which would survive into the late-time galaxy distribution. -->
+      </p>
+      <p>
+        <!-- The key observables are <span class="accent-word">parity-odd correlation functions</span> — 
+        in particular, the four-point function (trispectrum) evaluated on tetrahedral configurations 
+        that are not superimposable on their mirror images. Such correlators vanish identically in standard cosmology 
+        and are therefore clean null tests of parity symmetry. My work has focused on constructing these observables using 
+        the kinetic Sunyaev–Zel'dovich (kSZ) effect as a novel probe, extending the theoretical framework for parity-odd statistics, 
+        and developing concrete model-building approaches that connect observed signals to specific early-universe mechanisms. -->
+      </p>
+      <p>
+        <!-- Active directions include new bispectrum-level constraints using cross-correlations between galaxy surveys and kSZ measurements, 
+        and theoretical investigations into parity violation within the open EFT of inflation. -->
+      </p>
+      <!-- <div class="stakes">
+        <p>
+          A confirmed detection would establish that a fundamental symmetry of nature was broken in the universe's earliest moments
+          — a result with no analogue in any terrestrial experiment, and a direct window onto new physics at energies far beyond collider reach.
+        </p>
+      </div> -->
+      <p style="font-family:'Open Sans',sans-serif; font-size:9.5pt; letter-spacing:1.5px; text-transform:uppercase; color:var(--sec); font-weight:700; margin: 28px 0 10px;">Related publications</p>
+      <a class="paper-link" href="https://arxiv.org/abs/2610.08671" target="_blank" rel="noopener">Boosted Odds: Lower-Point Probes of Parity Violation with Momentum Fields (arXiv)</a>
+    </section>
+
+    <!-- PNG -->
+    <section class="research-section sec-png" id="png">
+      <h2>Primordial non-Gaussianity &amp; inflationary physics</h2>
+      <p class="lead">
+        Coming Soon...
+        <!-- The statistical character of primordial density fluctuations is a direct fingerprint
+        of the field content and interactions active during inflation — a fingerprint that galaxy surveys
+        are only now becoming sensitive enough to read. -->
+      </p>
+      <p>
+        Coming Soon...
+        <!-- The simplest inflationary models predict nearly Gaussian primordial fluctuations. 
+        Departures from Gaussianity — encoded in the bispectrum, trispectrum, and higher-order correlators — 
+        signal interactions between the inflaton and other fields, carrying information about particle physics at 
+        energies 10<sup>12</sup> times beyond the LHC. The shape and scale-dependence of these non-Gaussianities are as 
+        distinctive as a fingerprint: different mechanisms during inflation leave qualitatively different imprints on the 
+        statistics of large-scale structure. -->
+      </p>
+      <p>
+        <!-- My work in this area moves between two poles. 
+        On the <span class="accent-word">phenomenological</span> side, 
+        I am interested in characterising what specific inflationary mechanisms actually predict
+        — constructing the signatures that particular models of inflation leave in the statistics
+        of large-scale structure, and understanding how to distinguish between them observationally.
+        A particular focus is the class of non-Gaussianities generated by <span class="accent-word">spinning
+          particle exchanges</span> during inflation, which imprint distinctive angular dependencies on correlation
+        functions and are sensitive probes of new degrees of freedom beyond the inflaton. 
+        This involves developing loop-level predictions for the power spectrum and bispectrum of galaxy clustering, 
+        and understanding how these signals interact with the complexities of galaxy formation and bias. -->
+      </p>
+      <p>
+        On the <span class="accent-word">observational</span> side, 
+        I am interested in how to optimally extract PNG signals from upcoming surveys. 
+        This includes understanding how <span class="accent-word">selection effects</span> and 
+        anisotropic responses — including through the Lyman-alpha forest — modulate the apparent 
+        clustering of tracers and affect constraints on PNG, and designing reconstruction methods 
+        that make the most of the available information across multiple tracers.
+      </p>
+      <!-- <div class="stakes">
+        <p>
+          Even a null result at the level of <i>f</i><sub>NL</sub> ~ 1 
+          would decisively rule out broad classes of multi-field inflationary models. 
+          A detection would be transformative: direct evidence that new degrees of freedom 
+          were active at energies approaching the Planck scale.
+        </p>
+      </div> -->
+      <p style="font-family:'Open Sans',sans-serif; font-size:9.5pt; letter-spacing:1.5px; text-transform:uppercase; color:var(--sec); font-weight:700; margin: 28px 0 10px;">Related publications</p>
+      <a class="paper-link" href="https://arxiv.org/abs/2609.35713" target="_blank" rel="noopener">Tide-and-Seek: Anisotropic scale-dependent bias in the Lyman-alpha forest and designer samples (arXiv)</a>
+    </section>
+
+    <!-- EFT foundations -->
+    <!-- <section class="research-section sec-eft" id="eft">
+      <h2>Foundation of EFT</h2>
+      <p class="lead">
+        Extracting reliable constraints from galaxy surveys requires not just good data, 
+        but a theoretical framework that is internally consistent, systematically improvable, 
+        and honest about its own limitations.
+      </p>
+      <p>
+        The Effective Field Theory of Large-Scale Structure provides a systematic perturbative description of the matter and galaxy distributions on large scales, but several foundational questions about its structure remain open. My work in this direction is motivated by the belief that the reliability of any observational result is only as good as the theoretical machinery used to interpret it.
+      </p>
+      <p>
+        I am pursuing several threads here. One concerns <span class="accent-word">positivity bounds</span> — constraints on the EFT coefficients that follow from fundamental principles such as unitarity, causality, and analyticity of the S-matrix. These bounds, imported from the amplitudes programme, have the potential to constrain the parameter space of the EFT from first principles rather than from data alone. Another concerns <span class="accent-word">higher-loop renormalisation</span> for tensor observables and the treatment of angular dependencies and selection effects at loop level — work that is necessary for the theoretical predictions to keep pace with the statistical precision of next-generation surveys.
+      </p>
+      <p>
+        I am also developing a <span class="accent-word">response formalism</span> for the kSZ effect, and investigating how standard density-field reconstruction techniques must be modified in cosmologies with mixed dark matter components.
+      </p>
+      <div class="stakes">
+        <p>
+          As surveys like DESI and Euclid push into regimes where percent-level theoretical accuracy is required, the consistency and completeness of the underlying EFT becomes not a technical detail but a prerequisite for trustworthy science.
+        </p>
+      </div>
+    </section> -->
+
+    <div class="back-top-wrap">
+      <a href="#" class="back-top">↑ Back to top</a>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>© Yong Sheng Yap. | Last updated: 12 October 2026</p>
+  </footer>
+
+</body>
+</html>
