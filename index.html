@@ -118,9 +118,19 @@
     color: #ffffff;
   }
 
+  nav.main-nav { display: flex; gap: 28px; }
+  nav.main-nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10.5pt; letter-spacing: 0.6px; color: #cccccc;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  nav.main-nav a:hover { color: #ffffff; }
+
   @media (max-width: 767px) {
     header.site-nav { padding: 13px 20px; }
     header.site-nav .site-title { font-size: 14pt; }
+    nav.main-nav { gap: 18px; }
+    nav.main-nav a { font-size: 9pt; }
   }
 
   /* ---------- Hero ---------- */
@@ -271,6 +281,10 @@
 
   <header class="site-nav">
     <span class="site-title">Yong Sheng Yap | <span style="font-family:'Iansui', 'Playfair Display', serif;">葉勇陞</span></span>
+    <nav class="main-nav">
+      <a href="research.html">Research</a>
+      <a href="publication.html">Research</a>
+    </nav>
   </header>
 
   <section class="hero">
