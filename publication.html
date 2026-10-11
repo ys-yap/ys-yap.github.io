@@ -466,8 +466,20 @@
       const authorsHtml = pub.authors.map(a => {
         const norm = a.toLowerCase().replace(/[^a-z]/g, '');
         const self = SELF_NAME.split(',')[0].toLowerCase().replace(/[^a-z]/g, '');
-        return (norm.includes(self) || self.includes(norm))
-          ? `<span class="self">YSY</span>` : a;
+        if (norm.includes(self) || self.includes(norm)) {
+          return `<span class="self">YSY</span>`;
+        }
+        // Reformat "Last, First Middle" → "F.M. Last"
+        const parts = a.split(',');
+        if (parts.length === 2) {
+          const last = parts[0].trim();
+          const initials = parts[1].trim().split(' ')
+            .filter(Boolean)
+            .map(n => n[0] + '.')
+            .join('');
+          return `${initials} ${last}`;
+        }
+        return a;
       }).join(', ');
 
       const tagsHtml = pub.tags.map(t =>
