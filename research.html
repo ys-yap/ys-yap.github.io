@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Research | Yong Sheng Yap</title>
 <link rel="icon" type="image/png" href="assets/icon.png">
-
+ 
 <style>
   @font-face {
     font-family: 'Playfair Display';
@@ -52,7 +52,7 @@
     src: url('assets/fonts/Iansui/Iansui-Regular.ttf') format('truetype');
     font-weight: 400; font-style: normal; font-display: swap;
   }
-
+ 
   :root {
     --dark-bg: #1b1b1b;
     --footer-bg: #303033;
@@ -61,7 +61,7 @@
     --light-grey: #e1dfdb;
     --section-border: #e8e4df;
   }
-
+ 
   * { box-sizing: border-box; }
   html, body {
     margin: 0; padding: 0;
@@ -72,7 +72,7 @@
   }
   html { scroll-behavior: smooth; }
   a { color: inherit; text-decoration: none; }
-
+ 
   /* ── Nav ── */
   header.site-nav {
     position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
@@ -98,7 +98,7 @@
     nav.main-nav { gap: 18px; }
     nav.main-nav a { font-size: 9pt; }
   }
-
+ 
   /* ── Hero ── */
   .hero {
     position: relative;
@@ -122,16 +122,16 @@
     .hero { height: auto; padding: 48px 24px; }
     .hero h1 { font-size: 34pt; }
   }
-
+ 
   /* ── Jump links ── */
   .jump-nav {
     border-bottom: 1px solid var(--section-border);
-    padding: 0 56px; display: flex;
+    padding: 0 24px; display: flex;
   }
   .jump-nav a {
     display: inline-block; padding: 18px 28px 15px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10.5pt; color: #888;
+    font-size: 13pt; font-weight: 700; color: #888;
     border-bottom: 3px solid transparent;
     transition: color 0.2s, border-color 0.2s; white-space: nowrap;
   }
@@ -142,14 +142,14 @@
     .jump-nav { padding: 0 8px; overflow-x: auto; }
     .jump-nav a { padding: 14px 16px 11px; font-size: 9.5pt; }
   }
-
+ 
   /* ── Per-section colour theming ── */
   /*
      In use:
        .sec-parity   — slate blue
        .sec-png      — forest green
        .sec-eft      — deep plum
-
+ 
      Available for new sections:
        .sec-general  — burnt orange (site accent)
        .sec-rose     — dusty burgundy
@@ -165,11 +165,11 @@
   .sec-gold    { --sec: #8a7020; --sec-stakes-bg: rgba(138,112,32,0.07);  --sec-stakes-text: #352a00; }
   .sec-teal    { --sec: #1e6e72; --sec-stakes-bg: rgba(30,110,114,0.07);  --sec-stakes-text: #0a2a2c; }
   .sec-sand    { --sec: #7a6a55; --sec-stakes-bg: rgba(122,106,85,0.07);  --sec-stakes-text: #2e2418; }
-
+ 
   /* ── Content wrapper ── */
-  .research-wrapper { max-width: 780px; margin: 0 auto; padding: 0 48px 100px; }
-  @media (max-width: 767px) { .research-wrapper { padding: 0 24px 72px; } }
-
+  .research-wrapper { max-width: 780px; margin: 0 auto; padding: 0 24px 100px; }
+  @media (max-width: 767px) { .research-wrapper { padding: 0 16px 72px; } }
+ 
   /* ── Opening paragraph ── */
   .research-intro {
     padding: 56px 0 0; margin: 0;
@@ -180,7 +180,7 @@
     display: block; padding: 28px 0 0; margin: 0;
     font-family: 'Open Sans', sans-serif; font-size: 11pt; color: #888;
   }
-
+ 
   /* ── Research sections ── */
   .research-section {
     padding: 80px 0 64px;
@@ -193,21 +193,21 @@
     width: 36px; height: 2px;
     background: var(--sec); margin-bottom: 20px;
   }
-
+ 
   /* ── Headings ── */
   .research-section h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700; font-size: 24pt; line-height: 1.2;
     margin: 0 0 24px; color: var(--sec);
   }
-
+ 
   /* ── Lead ── */
   .research-section .lead {
     font-family: 'Playfair Display', serif;
     font-style: italic; font-size: 13.5pt; line-height: 1.75;
     color: #404040; margin: 0 0 28px;
   }
-
+ 
   /* ── Body ── */
   .research-section p {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -216,7 +216,7 @@
   }
   .research-section p:last-of-type { margin-bottom: 0; }
   .research-section .accent-word { color: var(--sec); font-weight: 700; }
-
+ 
   /* ── Stakes callout ── */
   .stakes {
     background: var(--sec-stakes-bg);
@@ -228,7 +228,7 @@
     line-height: 1.75 !important;
     color: var(--sec-stakes-text) !important; font-style: italic;
   }
-
+ 
   /* ── Paper link ── */
   .paper-link {
     display: inline-flex; align-items: center; gap: 7px;
@@ -239,7 +239,7 @@
   }
   .paper-link:hover { border-bottom-color: var(--sec); }
   .paper-link::before { content: "→"; }
-
+ 
   /* ── Optional image layout ── */
   /*
     Wrap any paragraph + image in:
@@ -263,7 +263,7 @@
     .with-figure { flex-direction: column; gap: 18px; }
     .section-figure { flex: none; width: 100%; max-width: 400px; }
   }
-
+ 
   /* ── Back to top ── */
   .back-top-wrap { text-align: center; padding: 48px 0 72px; }
   .back-top {
@@ -273,7 +273,7 @@
     transition: color 0.2s, border-color 0.2s;
   }
   .back-top:hover { color: var(--accent); border-bottom-color: var(--accent); }
-
+ 
   /* ── Footer ── */
   footer.site-footer { background-color: var(--footer-bg); padding: 24px; text-align: center; }
   footer.site-footer p {
@@ -293,7 +293,7 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
-
+ 
   <header class="site-nav">
     <a href="index.html" class="site-title">
       Yong Sheng Yap | <span style="font-family:'Iansui','Playfair Display',serif;">葉勇陞</span>
@@ -301,10 +301,10 @@
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="research.html" class="active">Research</a>
-      <a href="publication.html" class="active">Publications</a>
+      <a href="publications.html">Publications</a>
     </nav>
   </header>
-
+ 
   <section class="hero">
     <h1>Research</h1>
   </section>
