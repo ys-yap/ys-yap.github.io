@@ -347,7 +347,7 @@
 
   // ── Fetch from INSPIRE ───────────────────────────────────────────────────────
   async function fetchInspire() {
-    const url = `https://inspirehep.net/api/literature?sort=mostrecent&size=100&q=author%3A${INSPIRE_ID}`;
+    const url = `https://inspirehep.net/api/literature?sort=mostrecent&size=100&q=a+Yap%2C+Yong+Sheng`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`INSPIRE returned ${res.status}`);
     const data = await res.json();
