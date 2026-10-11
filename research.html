@@ -157,14 +157,14 @@
        .sec-teal     — dark teal
        .sec-sand     — neutral taupe
   */
-  .sec-parity  { --sec: #2e6fa8; --sec-stakes-bg: rgba(46,111,168,0.07);  --sec-stakes-text: #0d2a40; }
-  .sec-png     { --sec: #1e7a48; --sec-stakes-bg: rgba(30,122,72,0.07);   --sec-stakes-text: #0b2e1c; }
-  .sec-eft     { --sec: #6b3d7a; --sec-stakes-bg: rgba(107,61,122,0.07);  --sec-stakes-text: #2a1030; }
-  .sec-general { --sec: #b45f06; --sec-stakes-bg: rgba(180,95,6,0.07);    --sec-stakes-text: #4a2800; }
-  .sec-rose    { --sec: #924a4a; --sec-stakes-bg: rgba(146,74,74,0.07);   --sec-stakes-text: #3a1515; }
-  .sec-gold    { --sec: #8a7020; --sec-stakes-bg: rgba(138,112,32,0.07);  --sec-stakes-text: #352a00; }
-  .sec-teal    { --sec: #1e6e72; --sec-stakes-bg: rgba(30,110,114,0.07);  --sec-stakes-text: #0a2a2c; }
-  .sec-sand    { --sec: #7a6a55; --sec-stakes-bg: rgba(122,106,85,0.07);  --sec-stakes-text: #2e2418; }
+  .sec-parity  { --sec: #2e6fa8; }
+  .sec-png     { --sec: #1e7a48; }
+  .sec-eft     { --sec: #6b3d7a; }
+  .sec-general { --sec: #b45f06; }
+  .sec-rose    { --sec: #924a4a; }
+  .sec-gold    { --sec: #8a7020; }
+  .sec-teal    { --sec: #1e6e72; }
+  .sec-sand    { --sec: #7a6a55; }
  
   /* ── Content wrapper ── */
   .research-wrapper { max-width: 1100px; margin: 0 auto; padding: 0 48px 100px; }
@@ -199,13 +199,6 @@
     margin: 0 0 24px; color: var(--sec);
   }
  
-  /* ── Lead ── */
-  .research-section .lead {
-    font-family: 'Playfair Display', serif;
-    font-style: italic; font-size: 13.5pt; line-height: 1.75;
-    color: #404040; margin: 0 0 28px; max-width: 80ch;
-  }
- 
   /* ── Body ── */
   .research-section p {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -215,23 +208,12 @@
   .research-section p:last-of-type { margin-bottom: 0; }
   .accent-word { color: var(--accent); font-weight: 700; }
   .research-section .accent-word { color: var(--sec); font-weight: 700; }
- 
-  /* ── Stakes callout ── */
-  .stakes {
-    background: var(--sec-stakes-bg);
-    border-left: 2px solid var(--sec);
-    padding: 16px 20px; margin: 28px 0 0; max-width: 68ch;
-  }
-  .stakes p {
-    margin: 0 !important; font-size: 12pt !important;
-    line-height: 1.75 !important;
-    color: var(--sec-stakes-text) !important; font-style: italic;
-  }
+
  
   /* ── Paper link ── */
   .paper-link {
     display: inline-flex; align-items: center; gap: 7px;
-    margin-top: 24px; font-family: 'Open Sans', sans-serif; font-size: 13.5pt;
+    margin-top: 24px; font-family: 'Open Sans', sans-serif; font-size: 12pt;
     color: var(--sec);
     border-bottom: 1px solid color-mix(in srgb, var(--sec) 35%, transparent);
     padding-bottom: 2px; transition: border-color 0.2s;
@@ -344,9 +326,6 @@
     <!-- Parity violation -->
     <section class="research-section sec-parity" id="parity">
       <h2>Parity Violation</h2>
-      <p class="lead">
-        Parity is <i>not</i> a symmetry of our universe today, why would it be back then?
-      </p>
       <p>
         Under construction...
         <!-- Parity, the discrete symmetry mapping every spatial point to its mirror image, 
@@ -367,25 +346,13 @@
         <!-- Active directions include new bispectrum-level constraints using cross-correlations between galaxy surveys and kSZ measurements, 
         and theoretical investigations into parity violation within the open EFT of inflation. -->
       </p>
-      <!-- <div class="stakes">
-        <p>
-          A confirmed detection would establish that a fundamental symmetry of nature was broken in the universe's earliest moments
-          — a result with no analogue in any terrestrial experiment, and a direct window onto new physics at energies far beyond collider reach.
-        </p>
-      </div> -->
-      <p style="font-family:'Open Sans',sans-serif; font-size:13.5pt; letter-spacing:1.5px; text-transform:uppercase; color:var(--sec); font-weight:700; margin: 28px 0 10px;">Related publications</p>
+      <p style="font-family:'Open Sans',sans-serif; font-size:12pt; letter-spacing:1.25px; text-transform:uppercase; color:var(--sec); font-weight:700; margin: 28px 0 10px;">Related publications</p>
       <a class="paper-link" href="https://arxiv.org/abs/2610.08671" target="_blank" rel="noopener">Boosted Odds: Lower-Point Probes of Parity Violation with Momentum Fields (arXiv)</a>
     </section>
 
     <!-- PNG -->
     <section class="research-section sec-png" id="png">
       <h2>Primordial non-Gaussianity &amp; inflationary physics</h2>
-      <p class="lead">
-        Coming Soon...
-        <!-- The statistical character of primordial density fluctuations is a direct fingerprint
-        of the field content and interactions active during inflation — a fingerprint that galaxy surveys
-        are only now becoming sensitive enough to read. -->
-      </p>
       <p>
         Coming Soon...
         <!-- The simplest inflationary models predict nearly Gaussian primordial fluctuations. 
@@ -415,26 +382,13 @@
         clustering of tracers and affect constraints on PNG, and designing reconstruction methods 
         that make the most of the available information across multiple tracers.
       </p>
-      <!-- <div class="stakes">
-        <p>
-          Even a null result at the level of <i>f</i><sub>NL</sub> ~ 1 
-          would decisively rule out broad classes of multi-field inflationary models. 
-          A detection would be transformative: direct evidence that new degrees of freedom 
-          were active at energies approaching the Planck scale.
-        </p>
-      </div> -->
-      <p style="font-family:'Open Sans',sans-serif; font-size:13.5pt; letter-spacing:1.5px; text-transform:uppercase; color:var(--sec); font-weight:700; margin: 28px 0 10px;">Related publications</p>
+      <p style="font-family:'Open Sans',sans-serif; font-size:12pt; letter-spacing:1.25px; text-transform:uppercase; color:var(--sec); font-weight:700; margin: 28px 0 10px;">Related publications</p>
       <a class="paper-link" href="https://arxiv.org/abs/2609.35713" target="_blank" rel="noopener">Tide-and-Seek: Anisotropic scale-dependent bias in the Lyman-alpha forest and designer samples (arXiv)</a>
     </section>
 
     <!-- EFT foundations -->
     <!-- <section class="research-section sec-eft" id="eft">
       <h2>Foundation of EFT</h2>
-      <p class="lead">
-        Extracting reliable constraints from galaxy surveys requires not just good data, 
-        but a theoretical framework that is internally consistent, systematically improvable, 
-        and honest about its own limitations.
-      </p>
       <p>
         The Effective Field Theory of Large-Scale Structure provides a systematic perturbative description of the matter and galaxy distributions on large scales, but several foundational questions about its structure remain open. My work in this direction is motivated by the belief that the reliability of any observational result is only as good as the theoretical machinery used to interpret it.
       </p>
@@ -444,11 +398,6 @@
       <p>
         I am also developing a <span class="accent-word">response formalism</span> for the kSZ effect, and investigating how standard density-field reconstruction techniques must be modified in cosmologies with mixed dark matter components.
       </p>
-      <div class="stakes">
-        <p>
-          As surveys like DESI and Euclid push into regimes where percent-level theoretical accuracy is required, the consistency and completeness of the underlying EFT becomes not a technical detail but a prerequisite for trustworthy science.
-        </p>
-      </div>
     </section> -->
 
     <div class="back-top-wrap">
