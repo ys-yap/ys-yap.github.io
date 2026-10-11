@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Publications | Yong Sheng Yap</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+
+<style>
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto/static/Roboto-Black.ttf') format('truetype');
+    font-weight: 900; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Iansui';
+    src: url('assets/fonts/Iansui/Iansui-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+
+  :root {
+    --dark-bg: #1b1b1b;
+    --footer-bg: #303033;
+    --accent: #b45f06;
+    --text-color: #202124;
+    --light-grey: #e1dfdb;
+    --section-border: #e8e4df;
+  }
+
+  /* Tag colour map — add new entries here as your topics expand */
+  :root {
+    --tag-parity:  #2e6fa8;
+    --tag-png:     #1e7a48;
+    --tag-eft:     #6b3d7a;
+    --tag-dm:      #924a4a;
+    --tag-lss:     #8a7020;
+    --tag-ksz:     #1e6e72;
+    --tag-default: #7a6a55;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--text-color); background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+  html { scroll-behavior: smooth; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Nav ── */
+  header.site-nav {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+    background-color: var(--dark-bg); padding: 13px 48px;
+    display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+  }
+  header.site-nav .site-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; font-size: 18pt; color: #ffffff; white-space: nowrap;
+  }
+  nav.main-nav { display: flex; gap: 28px; }
+  nav.main-nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10.5pt; letter-spacing: 0.6px; color: #cccccc;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  nav.main-nav a:hover, nav.main-nav a.active { color: #ffffff; }
+  nav.main-nav a.active { border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  @media (max-width: 767px) {
+    header.site-nav { padding: 13px 20px; flex-wrap: wrap; gap: 12px; }
+    header.site-nav .site-title { font-size: 14pt; }
+    nav.main-nav { gap: 18px; }
+    nav.main-nav a { font-size: 9pt; }
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    height: 28vh; min-height: 180px; max-height: 260px;
+    display: flex; align-items: center; justify-content: center;
+    background-image: url('assets/banner.png');
+    background-size: cover; background-position: center;
+    background-attachment: fixed; margin-top: 54px;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background-color: rgba(33,33,33,0.5);
+  }
+  .hero h1 {
+    position: relative;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900; font-size: 50pt;
+    letter-spacing: -0.8px; color: #ffffff; margin: 0;
+  }
+  @media (max-width: 767px) {
+    .hero { height: auto; padding: 48px 24px; }
+    .hero h1 { font-size: 34pt; }
+  }
+
+  /* ── Wrapper ── */
+  .pub-wrapper { max-width: 860px; margin: 0 auto; padding: 0 48px 100px; }
+  @media (max-width: 767px) { .pub-wrapper { padding: 0 24px 72px; } }
+
+  /* ── Loading / error states ── */
+  .state-msg {
+    padding: 72px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-size: 13pt; color: #aaa;
+    text-align: center;
+  }
+
+  /* ── Controls ── */
+  .controls {
+    padding: 48px 0 36px;
+    display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start;
+  }
+  .control-group { display: flex; flex-direction: column; gap: 8px; }
+  .control-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8.5pt; letter-spacing: 1.8px; text-transform: uppercase;
+    color: #999; font-weight: 700;
+  }
+  .sort-group { display: flex; gap: 6px; flex-wrap: wrap; }
+  .sort-btn {
+    font-family: 'Open Sans', sans-serif; font-size: 10pt;
+    padding: 7px 14px; border: 1px solid var(--section-border);
+    background: #fff; color: #555; cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+  .sort-btn:hover { border-color: #aaa; color: #222; }
+  .sort-btn.active { background: var(--dark-bg); color: #fff; border-color: var(--dark-bg); }
+
+  .tag-filter-group { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag-pill {
+    font-family: 'Open Sans', sans-serif; font-size: 9pt;
+    padding: 5px 12px; border-radius: 20px;
+    border: 1px solid var(--section-border);
+    background: #fff; color: #666; cursor: pointer;
+    transition: all 0.15s; user-select: none;
+  }
+  .tag-pill:hover { border-color: #aaa; color: #222; }
+  .tag-pill.active { color: #fff; border-color: transparent; }
+  .tag-pill.active[data-tag="parity violation"]           { background: var(--tag-parity); }
+  .tag-pill.active[data-tag="primordial non-Gaussianity"] { background: var(--tag-png); }
+  .tag-pill.active[data-tag="effective field theories"]   { background: var(--tag-eft); }
+  .tag-pill.active[data-tag="dark matter"]                { background: var(--tag-dm); }
+  .tag-pill.active[data-tag="large-scale structure"]      { background: var(--tag-lss); }
+  .tag-pill.active[data-tag="kinetic Sunyaev-Zel'dovich"] { background: var(--tag-ksz); }
+  .tag-pill.active                                        { background: var(--tag-default); }
+
+  .clear-filter {
+    font-size: 9pt; color: #aaa; cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+    display: none; margin-top: 2px;
+  }
+  .clear-filter.visible { display: inline; }
+  .clear-filter:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ── Count line ── */
+  .pub-count {
+    font-family: 'Open Sans', sans-serif; font-size: 10pt; color: #aaa;
+    margin: 0 0 32px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--section-border);
+  }
+
+  /* ── Publication list ── */
+  #pub-list { display: flex; flex-direction: column; }
+
+  .pub-item {
+    padding: 32px 0; border-bottom: 1px solid var(--section-border);
+    display: flex; gap: 28px; align-items: flex-start;
+  }
+  .pub-item:last-child { border-bottom: none; }
+
+  .pub-year {
+    flex: 0 0 48px; font-family: 'Open Sans', sans-serif;
+    font-size: 9pt; color: #bbb; padding-top: 4px;
+    text-align: right; font-weight: 700; letter-spacing: 0.5px;
+  }
+
+  .pub-body { flex: 1 1 auto; min-width: 0; }
+
+  .lead-badge {
+    display: inline-block; font-family: 'Open Sans', sans-serif;
+    font-size: 8pt; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--accent); border: 1px solid rgba(180,95,6,0.4);
+    padding: 2px 8px; margin-bottom: 8px;
+  }
+
+  .pub-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; font-size: 13.5pt; line-height: 1.35;
+    color: #0e0e0e; margin: 0 0 8px;
+  }
+
+  .pub-authors {
+    font-family: 'Open Sans', sans-serif; font-size: 10.5pt;
+    color: #666; margin: 0 0 12px; line-height: 1.5;
+  }
+  .pub-authors .self { color: var(--text-color); font-weight: 700; }
+
+  .pub-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .pub-tag {
+    font-family: 'Open Sans', sans-serif; font-size: 8.5pt;
+    padding: 3px 10px; border-radius: 20px; color: #fff;
+    background: var(--tag-default);
+  }
+  .pub-tag[data-tag="parity violation"]           { background: var(--tag-parity); }
+  .pub-tag[data-tag="primordial non-Gaussianity"] { background: var(--tag-png); }
+  .pub-tag[data-tag="effective field theories"]   { background: var(--tag-eft); }
+  .pub-tag[data-tag="dark matter"]                { background: var(--tag-dm); }
+  .pub-tag[data-tag="large-scale structure"]      { background: var(--tag-lss); }
+  .pub-tag[data-tag="kinetic Sunyaev-Zel'dovich"] { background: var(--tag-ksz); }
+
+  .pub-links { display: flex; gap: 18px; flex-wrap: wrap; }
+
+  .pub-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: 'Open Sans', sans-serif; font-size: 9.5pt;
+    color: var(--accent);
+    border-bottom: 1px solid rgba(180,95,6,0.3);
+    padding-bottom: 1px; transition: border-color 0.15s;
+  }
+  .pub-link:hover { border-bottom-color: var(--accent); }
+  .pub-link::before { content: "→"; }
+
+  #no-results {
+    display: none; padding: 48px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-size: 13pt; color: #aaa;
+  }
+
+  /* ── Footer ── */
+  footer.site-footer { background-color: var(--footer-bg); padding: 24px; text-align: center; }
+  footer.site-footer p {
+    margin: 0; font-family: 'Open Sans', sans-serif;
+    font-size: 13pt; letter-spacing: 0.5px;
+    color: var(--light-grey); text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-title">
+      Yong Sheng Yap | <span style="font-family:'Iansui','Playfair Display',serif;">葉勇陞</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="big-picture.html">The Big Picture</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html" class="active">Publications</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Publications</h1>
+  </section>
+
+  <div class="pub-wrapper">
+
+    <!-- Controls (hidden until data loads) -->
+    <div class="controls" id="controls" style="display:none">
+      <div class="control-group">
+        <span class="control-label">Sort by</span>
+        <div class="sort-group">
+          <button class="sort-btn active" data-sort="date">Date</button>
+          <button class="sort-btn" data-sort="contribution">My contribution</button>
+          <button class="sort-btn" data-sort="alpha">Alphabetical</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Filter by topic</span>
+        <div class="tag-filter-group" id="tag-filters"></div>
+        <span class="clear-filter" id="clear-filter">Clear filter</span>
+      </div>
+    </div>
+
+    <p class="pub-count" id="pub-count"></p>
+    <div id="state-msg" class="state-msg">Loading publications…</div>
+    <div id="pub-list"></div>
+    <p id="no-results">No publications match the selected filter.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>© Yong Sheng Yap. | Last updated: 1 September 2026</p>
+  </footer>
+
+<script>
+  // ── Configuration ────────────────────────────────────────────────────────────
+  const INSPIRE_ID = '3209517';
+  const SELF_NAME  = 'Yap, Yong Sheng';   // as it appears in INSPIRE author list
+
+  // Manual tag overrides: map arXiv ID → array of your custom tags.
+  // INSPIRE keywords are inconsistent; this lets you curate the tags per paper.
+  // Add an entry whenever you submit a new paper.
+  const TAG_OVERRIDES = {
+    '2610.08671': ['parity violation', 'kinetic Sunyaev-Zel\'dovich', 'large-scale structure'],
+    '2609.35713': ['primordial non-Gaussianity', 'large-scale structure', 'effective field theories'],
+  };
+
+  // Contribution override: map arXiv ID → 'lead' or 'alphabetical'.
+  // Defaults to 'lead' if you are first author, 'alphabetical' otherwise.
+  const CONTRIBUTION_OVERRIDES = {};
+
+  // ── Tag colour mapping ───────────────────────────────────────────────────────
+  // To add a new tag colour, add an entry here AND a matching CSS variable + rule above.
+  const TAG_COLOURS = {
+    'parity violation':           'var(--tag-parity)',
+    'primordial non-Gaussianity': 'var(--tag-png)',
+    'effective field theories':   'var(--tag-eft)',
+    'dark matter':                'var(--tag-dm)',
+    'large-scale structure':      'var(--tag-lss)',
+    "kinetic Sunyaev-Zel'dovich": 'var(--tag-ksz)',
+  };
+
+  // ── State ────────────────────────────────────────────────────────────────────
+  let publications = [];
+  let activeTag  = null;
+  let activeSort = 'date';
+
+  // ── Fetch from INSPIRE ───────────────────────────────────────────────────────
+  async function fetchInspire() {
+    const url = `https://inspirehep.net/api/literature?sort=mostrecent&size=100&q=a+${INSPIRE_ID}&fields=titles,authors,arxiv_eprints,earliest_date,keywords,dois`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`INSPIRE returned ${res.status}`);
+    const data = await res.json();
+    return data.hits.hits.map(hit => parseRecord(hit));
+  }
+
+  function parseRecord(hit) {
+    const m = hit.metadata;
+    const title = (m.titles?.[0]?.title) ?? 'Untitled';
+    const authors = (m.authors ?? []).map(a => a.full_name ?? '');
+    const arxiv = m.arxiv_eprints?.[0]?.value ?? null;
+    const doi   = m.dois?.[0]?.value ?? null;
+    const date  = m.earliest_date ?? '';
+    const year  = date ? parseInt(date.slice(0, 4)) : 0;
+    const month = date.length >= 7 ? parseInt(date.slice(5, 7)) : 1;
+
+    // Tags: use override if set, otherwise fall back to INSPIRE keywords
+    const tags = arxiv && TAG_OVERRIDES[arxiv]
+      ? TAG_OVERRIDES[arxiv]
+      : (m.keywords ?? [])
+          .filter(k => k.schema === 'INSPIRE')
+          .slice(0, 4)
+          .map(k => k.value);
+
+    // Contribution: override > first-author heuristic
+    let contribution = 'alphabetical';
+    if (arxiv && CONTRIBUTION_OVERRIDES[arxiv]) {
+      contribution = CONTRIBUTION_OVERRIDES[arxiv];
+    } else if (authors.length > 0) {
+      const first = authors[0].toLowerCase().replace(/[^a-z]/g, '');
+      const self  = SELF_NAME.split(',')[0].toLowerCase().replace(/[^a-z]/g, '');
+      if (first.includes(self) || self.includes(first)) contribution = 'lead';
+    }
+
+    return { title, authors, year, month, arxiv, doi, tags, contribution };
+  }
+
+  // ── Build tag filter pills ───────────────────────────────────────────────────
+  function buildTagFilters() {
+    const allTags = [...new Set(publications.flatMap(p => p.tags))].sort();
+    const container = document.getElementById('tag-filters');
+    container.innerHTML = '';
+    allTags.forEach(tag => {
+      const pill = document.createElement('span');
+      pill.className = 'tag-pill';
+      pill.dataset.tag = tag;
+      pill.textContent = tag;
+      pill.addEventListener('click', () => toggleTag(tag));
+      container.appendChild(pill);
+    });
+  }
+
+  function toggleTag(tag) {
+    activeTag = activeTag === tag ? null : tag;
+    document.querySelectorAll('.tag-pill').forEach(p =>
+      p.classList.toggle('active', p.dataset.tag === activeTag)
+    );
+    document.getElementById('clear-filter').classList.toggle('visible', activeTag !== null);
+    render();
+  }
+
+  document.getElementById('clear-filter').addEventListener('click', () => {
+    if (activeTag) toggleTag(activeTag);
+  });
+
+  // ── Sort buttons ─────────────────────────────────────────────────────────────
+  document.querySelectorAll('.sort-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeSort = btn.dataset.sort;
+      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+  });
+
+  // ── Render ───────────────────────────────────────────────────────────────────
+  function render() {
+    let pubs = [...publications];
+
+    if (activeTag) pubs = pubs.filter(p => p.tags.includes(activeTag));
+
+    if (activeSort === 'date') {
+      pubs.sort((a, b) => (b.year * 12 + b.month) - (a.year * 12 + a.month));
+    } else if (activeSort === 'contribution') {
+      const ord = { lead: 0, alphabetical: 1 };
+      pubs.sort((a, b) => {
+        const d = (ord[a.contribution] ?? 1) - (ord[b.contribution] ?? 1);
+        return d !== 0 ? d : (b.year * 12 + b.month) - (a.year * 12 + a.month);
+      });
+    } else {
+      pubs.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    const list      = document.getElementById('pub-list');
+    const noResults = document.getElementById('no-results');
+    const countEl   = document.getElementById('pub-count');
+
+    list.innerHTML = '';
+
+    if (pubs.length === 0) {
+      noResults.style.display = 'block';
+      countEl.textContent = '';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    const total = publications.length;
+    countEl.textContent = activeTag
+      ? `Showing ${pubs.length} of ${total} publication${total !== 1 ? 's' : ''}`
+      : `${total} publication${total !== 1 ? 's' : ''}`;
+
+    pubs.forEach(pub => {
+      const item = document.createElement('div');
+      item.className = 'pub-item';
+
+      const authorsHtml = pub.authors.map(a => {
+        const norm = a.toLowerCase().replace(/[^a-z]/g, '');
+        const self = SELF_NAME.split(',')[0].toLowerCase().replace(/[^a-z]/g, '');
+        return (norm.includes(self) || self.includes(norm))
+          ? `<span class="self">${a}</span>` : a;
+      }).join(', ');
+
+      const tagsHtml = pub.tags.map(t =>
+        `<span class="pub-tag" data-tag="${t}">${t}</span>`
+      ).join('');
+
+      const badgeHtml = pub.contribution === 'lead'
+        ? `<span class="lead-badge">Lead author</span><br>` : '';
+
+      const linksHtml = [
+        pub.arxiv ? `<a class="pub-link" href="https://arxiv.org/abs/${pub.arxiv}" target="_blank" rel="noopener">arXiv:${pub.arxiv}</a>` : '',
+        pub.doi   ? `<a class="pub-link" href="https://doi.org/${pub.doi}" target="_blank" rel="noopener">Published version</a>` : '',
+      ].filter(Boolean).join('');
+
+      item.innerHTML = `
+        <div class="pub-year">${pub.year || ''}</div>
+        <div class="pub-body">
+          ${badgeHtml}
+          <div class="pub-title">${pub.title}</div>
+          <div class="pub-authors">${authorsHtml}</div>
+          ${tagsHtml ? `<div class="pub-tags">${tagsHtml}</div>` : ''}
+          <div class="pub-links">${linksHtml}</div>
+        </div>`;
+
+      list.appendChild(item);
+    });
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────────────────
+  (async () => {
+    const stateMsg = document.getElementById('state-msg');
+    try {
+      publications = await fetchInspire();
+      stateMsg.style.display = 'none';
+      document.getElementById('controls').style.display = 'flex';
+      buildTagFilters();
+      render();
+    } catch (err) {
+      stateMsg.textContent = 'Could not load publications. Please try again later.';
+      console.error(err);
+    }
+  })();
+</script>
+</body>
+</html>
