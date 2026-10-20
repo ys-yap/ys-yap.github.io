@@ -59,7 +59,7 @@
     --tag-eft:     #6b3d7a;
     --tag-dm:      #924a4a;
     --tag-lss:     #8a7020;
-    --tag-ksz:     #1e6e72;
+    --tag-cmbsec:  #1e6e72;
     --tag-default: #7a6a55;
   }
 
@@ -170,7 +170,7 @@
   .tag-pill.active[data-tag="effective field theories"]   { background: var(--tag-eft); }
   .tag-pill.active[data-tag="dark matter"]                { background: var(--tag-dm); }
   .tag-pill.active[data-tag="large-scale structure"]      { background: var(--tag-lss); }
-  .tag-pill.active[data-tag="kinetic Sunyaev-Zel'dovich"] { background: var(--tag-ksz); }
+  .tag-pill.active[data-tag="CMB secondaries"]            { background: var(--tag-cmbsec); }
   .tag-pill.active                                        { background: var(--tag-default); }
 
   .clear-filter {
@@ -236,7 +236,7 @@
   .pub-tag[data-tag="effective field theories"]   { background: var(--tag-eft); }
   .pub-tag[data-tag="dark matter"]                { background: var(--tag-dm); }
   .pub-tag[data-tag="large-scale structure"]      { background: var(--tag-lss); }
-  .pub-tag[data-tag="kinetic Sunyaev-Zel'dovich"] { background: var(--tag-ksz); }
+  .pub-tag[data-tag="CMB secondaries"] { background: var(--tag-cmbsec); }
 
   .pub-links { display: flex; gap: 18px; flex-wrap: wrap; }
 
@@ -321,7 +321,7 @@
   // INSPIRE keywords are inconsistent; this lets you curate the tags per paper.
   // Add an entry whenever you submit a new paper.
   const TAG_OVERRIDES = {
-    '2610.08671': ['parity violation', 'kinetic Sunyaev-Zel\'dovich', 'large-scale structure'],
+    '2610.08671': ['parity violation', 'CMB secondaries', 'large-scale structure'],
     '2609.35713': ['primordial non-Gaussianity', 'large-scale structure'],
   };
 
@@ -337,7 +337,7 @@
     'effective field theories':   'var(--tag-eft)',
     'dark matter':                'var(--tag-dm)',
     'large-scale structure':      'var(--tag-lss)',
-    "kinetic Sunyaev-Zel'dovich": 'var(--tag-ksz)',
+    'CMB secondaries': 'var(--tag-cmbsec)',
   };
 
   // ── State ────────────────────────────────────────────────────────────────────
